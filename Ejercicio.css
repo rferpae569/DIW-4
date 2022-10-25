@@ -1,33 +1,42 @@
-.derecha{
-    width: 100px;
-    height: 100px;
-    float: right;
-    /*En teoria es con bottom, pero no funciona*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+main {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 90vh;
+    background-color: aquamarine;
+    background-image: url("https://picsum.photos/200");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
 }
 
-.superior{
+footer {
+    height: 10vh;
+    background-color: blueviolet;
     position: fixed;
-    top: 0;
-}
-.superior2{
-    position: fixed;
-    top: 0;
-    left: 10vw;
+    bottom: 0;
+    width: 100vw; 
 }
 
-.izquierda{
-    width: 100px;
-    height: 100px;
-    float: left;
-    /*Quiero usar el bottom para que no se solape, pero no funciona*/
+footer img {
+    height: 75%;
+    width: auto;
+}
+main img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .div{
     position: relative;
     height: 100vh;
-    
 }
-
 
 .hijo{
     width: 100px;
@@ -38,14 +47,27 @@
     top: 30vh;
 }
 
+.superior{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.superior2{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    right: 0;
+}
+
 .tamaño{
     width: 100px;
     height: 100px;
 }
 
-.logo{
+.izquierda{
     width: 100px;
     height: 100px;
-    position: absolute;
-    bottom: 0;
+    float: left;
+    z-index: 10;
 }
