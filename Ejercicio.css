@@ -50,12 +50,20 @@ main img {
 .superior{
     position: fixed;
     top: 0;
+    width: 150px;
+    height: 150px;
+    background-image: url(img/paisaje1.jpg);
+    background-repeat: no-repeat;
     z-index: 10;
 }
 
 .superior2{
     position: fixed;
     top: 0;
+    width: 150px;
+    height: 150px;
+    background-image: url(img/paisaje2.jpg);
+    background-repeat: no-repeat;
     z-index: 10;
     right: 0;
 }
